@@ -19,11 +19,11 @@
 
             // Alert welcome message
             if (name && name.trim() !== "") {
-                alert("Welcome to my website, " + name + "!");
+                alert("Welcome to my Website, " + name + "!");
 
                 // Personalize page
                 document.getElementById("welcomeHeading").textContent =
-                    "Welcome, " + name + "!";
+                    "Welcome to my Page, " + name + "!";
             } else {
                 alert("Welcome to my website!");
             }
@@ -39,9 +39,8 @@
     <!-- Navigation Menu -->
     <nav>
         <ul class="navMenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Future Assignment 1</a></li>
-            <li><a href="#">Future Assignment 2</a></li>
+            <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a>
+            
         </ul>
     </nav>
 </header>
@@ -56,7 +55,7 @@
         <div class="contentBox">
 
             <!-- Image -->
-            <img src="images/suit.png" class ="img" alt="Professional Photo">
+            <img src="images/suit.png" height="400" width="300"  alt="Professional Photo">
 
             <!-- Paragraphs with span -->
             <p>
@@ -101,7 +100,12 @@
 </main>
 
 <footer>
-    <p>&copy; 2026 My Website</p>
+    <p>&copy; 2026 My Website
+        <a href="        https://www.linkedin.com/in/gaushik-gounder-458b02214/ " target="_blank">
+            LinkedIn
+        </a>
+        My profile
+    </p>
 </footer>
 
 </body>
