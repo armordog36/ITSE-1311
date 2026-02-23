@@ -2,15 +2,20 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    color: rgb(57, 57, 57);
+    line-height: 1.5;
     margin: 0;
 }
 
 /* ID selector */
-#welcomeHeading {
-    background-color: #2c3e50;
-    color: white;
+header {
+    background-color:#71aed3;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
+}
+
+h2{
+    text-align: center;
 }
 
 /* Class selector (navigation) */
@@ -51,17 +56,17 @@ body {
 /* Image styling */
 .img {
     float: right;
-    margin-left: 15px;
+    margin-left: 0px;
     max-width: 100%;
     height: auto;
 }
 
 /* Footer */
 footer {
+    background-color: #997b4d ;
     text-align: center;
-    background-color: #2c3e50;
-    color: white;
-    padding: 10px;
+    padding: 15px 0;
+    width: 100%;
 }
 
 /* Mobile-friendly */
