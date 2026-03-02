@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quote of the Day</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        a {
+            display: block;
+            margin: 8px 0;
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Quote of the Day</h1>
+
+<div class="box" id="quoteBox"></div>
+
+<div class="box">
+    <h2>Favorite Websites (Original)</h2>
+    <div id="originalLinks"></div>
+</div>
+
+<div class="box">
+    <h2>Favorite Websites (Updated)</h2>
+    <div id="updatedLinks"></div>
+</div>
+
+<script>
+    // ==============================
+    // ARRAY OF 5 QUOTES
+    // ==============================
+    const quotes = [
+        "Believe in yourself.",
+        "Success is not final; failure is not fatal.",
+        "Hard work beats talent when talent doesn’t work hard.",
+        "Dream big and dare to fail.",
+        "Stay positive, work hard, make it happen."
+    ];
+
+    // Prompt user for a number
+    let userNumber = prompt("Enter any number:");
+
+    // Convert input to a number
+    userNumber = Number(userNumber);
+
+    // Use modulus to get index between 0–4
+    let index = userNumber % 5;
+
+    // Display the quote
+    document.getElementById("quoteBox").innerHTML =
+        "<h2>Your Quote:</h2><p>" + quotes[index] + "</p>";
+
+
+
+    // ==============================
+    // ARRAY OF 3 WEBSITE URLS
+    // ==============================
+    let websites = [
+        "https://www.google.com",
+        "https://www.youtube.com",
+        "https://www.chatgpt.com"
+    ];
+
+    // Function to display links
+    function displayLinks(array, elementId) {
+        let html = "";
+
+        for (let i = 0; i < array.length; i++) {
+            html += '<a href="' + array[i] + '" target="_blank">' + array[i] + "</a>";
+        }
+
+        document.getElementById(elementId).innerHTML = html;
+    }
+
+    // Display original links
+    displayLinks(websites, "originalLinks");
+
+
+
+    // ==============================
+    // ADD USER FAVORITE WEBSITE
+    // ==============================
+    let userWebsite = prompt("Enter your favorite website URL:");
+
+    // Add to end of array
+    websites.push(userWebsite);
+
+    // Remove first website from array
+    websites.shift();
+
+    // Display updated links
+    displayLinks(websites, "updatedLinks");
+
+</script>
+
+</body>
+</html>
