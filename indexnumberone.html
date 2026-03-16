@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="0; url=https://armordog36.github.io/ITSE-1311/secret-number-game.html">  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- JavaScript -->
+    <script>
+        window.onload = function () {
+
+            // Prompt for visitor name
+            var name = prompt("Welcome to my page. Please enter your name:");
+
+            // Alert welcome message
+            if (name && name.trim() !== "") {
+                alert("Welcome to my Website, " + name + "!");
+
+                // Personalize page
+                document.getElementById("welcomeHeading").textContent =
+                    "Welcome to my Home Page, " + name + "!";
+            } else {
+                alert("Welcome to my website!");
+            }
+        };
+    </script>
+</head>
+
+<body>
+
+<header>
+    <h1 id="welcomeHeading">My Web Page</h1>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul class="navMenu">
+            <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a>
+            
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section>
+
+        <h2>Professional Goals</h2>
+
+            
+            <hr>
+
+        <!-- Div -->
+        <div class="contentBox">
+
+            <!-- Image -->
+            <img src="images/suit.png" height="400" width="300"  alt="Professional Photo">
+
+            <!-- Paragraphs with span -->
+            <p>
+                Hello! My name is <span class="highlight">Gaushik Gounder</span>.
+                I am currently studying Software Development and working
+                toward a career in the technology field. I enjoy learning
+                how software systems work and how they can be used to solve
+                real-world problems.
+            </p>
+
+            <p>
+                My professional goal is to become a skilled software developer
+                who can design efficient, reliable applications. I want to work
+                on projects that improve productivity and help businesses grow.
+            </p>
+
+            <p>
+                In the future, I hope to continue learning new programming
+                languages and technologies. I believe persistence, practice,
+                and continuous learning are key to success in the tech industry.
+            </p>
+
+        </div>
+
+    </section>
+
+ 
+
+</main>
+
+<footer>
+
+    <section>
+
+        <h2>External Resources</h2>
+
+        <!-- External Links -->
+        <p>
+            Visit
+            <a href="https://www.w3schools.com" target="_blank">
+                W3Schools
+            </a>
+            to learn more about web development.
+        </p>
+
+    </section>
+
+
+
+    <p>&copy; 2026 My Website | Author: 
+        <a href="        https://www.linkedin.com/in/gaushik-gounder-458b02214/ " target="_blank">
+            LinkedIn
+        </a>
+      
+    </p>
+</footer>
+
+</body>
+</html>
+
+
+ 
