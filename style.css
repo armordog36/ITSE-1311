@@ -16,12 +16,12 @@ main {
     padding: 20px;
 }
 
-/*  Add space under month heading */
+/* Space under month heading */
 #month {
     margin-bottom: 25px;
 }
 
-/*  Add space above specials */
+/* Space above specials */
 #specials {
     margin-top: 25px;
 }
@@ -37,7 +37,7 @@ main {
     background-color: rgba(255, 255, 255, 0.85);
 }
 
-/* Left align tips */
+/* Tips formatting */
 #seasontips {
     text-align: left;
 }
@@ -53,7 +53,15 @@ main {
 
 /* Footer */
 footer {
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+/* ✅ IMPROVED COPYRIGHT */
+.copyright {
+    font-size: 18px;          /* bigger text */
+    font-weight: bold;        /* makes it stand out */
+    color: #222;              /* darker for visibility */
+    margin-top: 15px;
 }
 
 /* Seasonal borders */
