@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #333;
+}
+
+header {
+    padding: 20px;
+}
+
+#specials, #seasontips {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.winter { border: 2px solid blue; }
+.spring { border: 2px solid purple; }
+.summer { border: 2px solid green; }
+.fall { border: 2px solid brown; }
