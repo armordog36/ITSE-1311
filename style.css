@@ -1,21 +1,63 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    color: #333;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
 }
 
+/* Header */
 header {
     padding: 20px;
 }
 
-#specials, #seasontips {
-    margin: 20px;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: rgba(255,255,255,0.8);
+/* Main section */
+main {
+    padding: 20px;
 }
 
-.winter { border: 2px solid blue; }
-.spring { border: 2px solid purple; }
-.summer { border: 2px solid green; }
-.fall { border: 2px solid brown; }
+/*  Add space under month heading */
+#month {
+    margin-bottom: 25px;
+}
+
+/*  Add space above specials */
+#specials {
+    margin-top: 25px;
+}
+
+/* Content boxes */
+#specials, 
+#seasontips {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 60%;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+/* Left align tips */
+#seasontips {
+    text-align: left;
+}
+
+#seasontips ul {
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
+#seasontips li {
+    margin-bottom: 6px;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+}
+
+/* Seasonal borders */
+.winter { border: 3px solid blue; }
+.spring { border: 3px solid purple; }
+.summer { border: 3px solid green; }
+.fall { border: 3px solid brown; }
